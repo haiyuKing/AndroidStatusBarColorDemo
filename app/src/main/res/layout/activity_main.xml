@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 状态栏着色:android:fitsSystemWindows="true" -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.why.project.statusbarcolor.MainActivity"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Hello World!"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:gravity="center"/>
+</RelativeLayout>
