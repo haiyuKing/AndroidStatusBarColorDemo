@@ -5,8 +5,12 @@
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 21+ devices.
     -->
-    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
-        <!-- API 21 theme customizations can go here. -->
+    <!-- API 21 theme customizations can go here. -->
+    <!-- Eclipse开发环境 -->
+    <!--<style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+    </style>-->
+    <!-- Android Studio开发环境 -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
     </style>
     
     <!-- Android 状态栏着色 -->
