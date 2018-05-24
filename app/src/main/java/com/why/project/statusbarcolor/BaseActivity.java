@@ -39,7 +39,7 @@ public class BaseActivity extends AppCompatActivity{
 	 * 获取状态栏的高度
 	 * 19API以上 读取到状态栏高度才有意义
 	 */
-	private int getStatusBarHeight(Context context) {
+	public int getStatusBarHeight(Context context) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 			int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
 			return resourceId > 0 ? context.getResources().getDimensionPixelSize(resourceId) : 0;
