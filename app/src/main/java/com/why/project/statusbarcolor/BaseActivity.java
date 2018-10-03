@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +30,7 @@ public class BaseActivity extends AppCompatActivity{
 			return;
 		}
 		View view = new View(this);
-		view.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+		view.setBackgroundColor(ContextCompat.getColor(this,R.color.colorPrimary));
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, height);
 		ViewGroup decorView = (ViewGroup) findViewById(android.R.id.content);
 		decorView.addView(view, params);
